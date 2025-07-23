@@ -1,0 +1,53 @@
+/* .usuario-container {
+    padding: 2rem;
+    max-width: 1400px;
+  }
+   */
+  .profile-header {
+    padding: 1.5rem;
+    margin-left: -1px;
+    margin-right: 0px;
+    background:#fff;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .avatar-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #0066ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  
+  .security-section, .permissions-section, .notifications-section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+  }
+  
+  .permissions-section .list-group-item {
+    border-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  .form-check-input:checked {
+    background-color: #0066ff;
+    border-color: #0066ff;
+  }
+  
+  .badge {
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+  }
+  
+  h4 {
+    color: #2c3e50;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 0.5rem;
+  }
