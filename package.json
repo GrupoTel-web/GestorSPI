@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "A minimal Node.js web application.",
+  "main": "app.js",
+  "author": "alphasec",
+  "license": "MIT",
+  "proxy": "http://localhost:3000",
+  "scripts": {
+    "start": "node app.js",
+    "build": "cd client && npm install && npm run build",
+    "postinstall": "npm run build",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
+    "dev-server": "nodemon app.js",
+    "dev-client": "cd client && npm start",
+    "update-coordinates": "node controllers/nucleoTecnico/updateCoordinates.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcryptjs": "^3.0.2",
+    "connect-redis": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "express-session": "^1.18.1",
+    "form-data": "^4.0.2",
+    "html-to-image": "^1.11.13",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.13.0",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
